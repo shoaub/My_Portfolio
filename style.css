@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   scroll-padding-top: 80px;
+}
+
+body {
+  background: #f8fafc;
+  color: #374151;
+  font-family: 'Epunda Slab', serif;
+  line-height: 1.6;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #0a0a0a;
+  color: #e5e7eb;
+}
+
+body.dark h2, body.dark h3, body.dark .logo {
+  color: rgb(50, 255, 68);
+  text-shadow: 0 0 5px , 0 0 15px;
+}
+
+body.dark .card, body.dark .skill-box, body.dark .experience-item, body.dark .certs__card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #14b8a6;
+}
+
+body.dark .btn, body.dark .contact__box, body.dark #theme-toggle {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+body.dark footer {
+  background: #111;
+  color: #aaa;
+  box-shadow: 0 0 10px rgb(235, 254, 27);
+}
+
+/* Header */
+header {
+  background: #0f172a;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #14b8a6;
+}
+
+nav a {
+  color: #e2e8f0;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #14b8a6;
+}
+
+#theme-toggle {
+  margin-left: 15px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #14b8a6;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+  background: #0d9488;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #17a595;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero h2 span {
+  color: #1b9d90c7;
+}
+
+.hero p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #475569;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #097064;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0d9488;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0f766e;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Experience */
+.experience-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.experience-item h3 {
+  color: #14b8a6;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.skill-box h3 {
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Certifications */
+.certs {
+  background: #f1f5f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.certs__title {
+  color: #0f766e;
+}
+
+.certs__grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  padding: 0;
+  list-style: none;
+}
+
+.certs__card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.certs__badge {
+  font-size: 12px;
+  background: #14b8a6;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* Blog */
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Contact */
+.contact {
+  background: #0f172a;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact__grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact__box {
+  background: #14b8a6;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact__box:hover {
+  background: #0d9488;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  padding: 15px;
+  text-align: center;
+  color: #94a3b8;
+}
